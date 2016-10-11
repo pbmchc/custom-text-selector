@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtextselector="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/red"
+        customtextselector:showAsAction="ifRoom"
+        android:icon="@drawable/red"
+        android:title=""
+        />
+    <item android:id="@+id/green"
+        customtextselector:showAsAction="ifRoom"
+        android:icon="@drawable/green"
+        android:title=""
+        />
+    <item android:id="@+id/blue"
+        customtextselector:showAsAction="ifRoom"
+        android:icon="@drawable/blue"
+        android:title=""
+
+        />
+    <item android:id="@+id/remove"
+        customtextselector:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title=""/>
+</menu>
