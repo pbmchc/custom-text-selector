@@ -39,7 +39,6 @@ public class EasyActivity extends AppCompatActivity {
         clearButton = (Button) findViewById(R.id.clearButton);
         copyButton = (Button) findViewById(R.id.copyButton);
 
-
         edt.setCustomSelectionActionModeCallback(new ActionMode.Callback() {
 
             @Override
@@ -153,7 +152,7 @@ public class EasyActivity extends AppCompatActivity {
                 end = edt.getSelectionEnd();
                 BackgroundColorSpan[] bcs = edt.getText().getSpans(start, end, BackgroundColorSpan.class);
                 int i = bcs.length;
-                if (i==0 && flag==0) {
+                if (i==0 && flag==0 && start != end) {
                     CharacterStyle cs;
                     cs = new BackgroundColorSpan(Color.argb(80, 255, 148, 130));
                     edt.getText().setSpan(cs, start,end, 1);
